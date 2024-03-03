@@ -18,8 +18,9 @@
   </head>
 
   <body>
-    <header>
-      <div>
+    <!--Navigation-->
+    <header id="head-div">
+      <div id="title1">
         <a href="./index.html"
           ><img
             src="images/netflix_logo.png"
@@ -28,16 +29,32 @@
             height="25"
         /></a>
       </div>
+      <div id="search-div">
+        <form action="./search.html" method="GET">
+          <input
+            type="text"
+            name="query"
+            id="query"
+            placeholder="Search Anime..."
+            required
+          />
+          <button name="search" type="submit">
+            <i class="fa fa-search"></i>
+          </button>
+        </form>
+      </div>
     </header>
 
+    <!--Banner-->
     <section>
-      <div class="slideshow"></div>
+      <div class="slideshow-container"></div>
     </section>
 
+    <!--Content-->
     <section>
       <div class="divox">
         <h2 id="latest">Top 10</h2>
-        <div id="latest2" class="popular">Top_10</div>
+        <div id="latest2" class="popularg"></div>
       </div>
     </section>
 
@@ -48,6 +65,8 @@
       </div>
     </section>
     <hr />
+
+    <!--Footer-->
     <footer>
       <div>
         <a href="https://www.facebook.com/" target="_blank"
@@ -64,5 +83,24 @@
         /></a>
       </div>
     </footer>
+
+    <script src="./js/script.js"></script>
+    <script
+      async
+      src="https://kit.fontawesome.com/45cb819601.js"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-BHQX4066ZV"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+      gtag("config", "G-BHQX4066ZV");
+    </script>
   </body>
 </html>
