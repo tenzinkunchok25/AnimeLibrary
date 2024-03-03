@@ -80,8 +80,28 @@ async function getTrendingAnimes(data) {
             poster = anime["coverImage"]["extraLarge"];
         }
 
-        SLIDER_HTML += `<div class="mySlides fade"> <div class="data-slider"> <p class="spotlight">#${pos + 1
-            } Spotlight</p><h1>${title}</h1> <div class="extra1"> <span class="year"><i class="fa fa-play-circle"></i>${type}</span> <span class="year year2"><i class="fa fa-calendar"></i>${status}</span> <span class="cbox cbox1">${genres}</span> <span class="cbox cbox2">HD</span> </div><p class="small-synop">${description}</p><div id="watchh"> <a href="${url}" class="watch-btn"> <i class="fa fa-play-circle"></i> Watch Now </a> <a href="${url}" class="watch-btn watch-btn2"> <i class="fa fa-info-circle"></i> Details<i class="fa fa-angle-right"></i> </a> </div></div><div class="shado"> <a href="${url}"></a> </div><img src="${poster}"> </div>`;
+        SLIDER_HTML += 
+        `<div class="mySlides fade"> 
+            <div class="data-slider"> 
+                <p class="spotlight">#${pos + 1} Spotlight</p>
+                <h1>${title}</h1> 
+                <div class="extra1"> 
+                    <span class="year"><i class="fa fa-play-circle"></i>${type}</span> 
+                    <span class="year year2"><i class="fa fa-calendar"></i>${status}</span> 
+                    <span class="cbox cbox1">${genres}</span> 
+                    <span class="cbox cbox2">HD</span>  
+                </div>
+                <p class="small-synop">${description}</p>
+                <div id="watchh"> 
+                    <a href="${url}" class="watch-btn"> <i class="fa fa-play-circle"></i> Watch Now </a> 
+                    <a href="${url}" class="watch-btn watch-btn2"> <i class="fa fa-info-circle"></i> Details<i class="fa fa-angle-right"></i> </a> 
+                </div>
+            </div>
+            <div class="shado"> 
+                <a href="${url}"></a> 
+            </div>
+            <img src="${poster}"> 
+        </div>`;
     }
 
     document.querySelector(".slideshow-container").innerHTML =
