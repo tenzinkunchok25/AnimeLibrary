@@ -102,5 +102,15 @@
       gtag("js", new Date());
       gtag("config", "G-BHQX4066ZV");
     </script>
+    <script>
+      const nav = document.getElementById("head-div");
+      window.addEventListener("scroll", () => {
+        if (window.scrollY >= 100) {
+          nav.classList.add("nav_black");
+        } else {
+          nav.classList.remove("nav_black");
+        }
+      });
+    </script>
   </body>
 </html>
