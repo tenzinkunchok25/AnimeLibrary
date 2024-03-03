@@ -22,3 +22,41 @@ body{
 .nav_black{
     background-color:#111;
 }
+
+.slideshow-container {
+    width: 100%;
+    position: relative;
+}
+
+.mySlides{
+    display: none;
+    height: 400px;
+    width: 100%;
+    overflow: hidden;
+    flex-wrap:wrap;
+    align-content: flex-end;
+    justify-content: flex-start;
+}
+
+.mySlides img {
+    width: 100%;
+    height: 100%;
+    opacity: 0.7;
+    max-width: unset;
+    max-height: unset;
+    border: none;
+    object-fit: cover;
+    position: absolute;
+}
+
+.data-slider {
+    z-index: 1;
+    margin-left: 5%;
+    max-width: 50%;
+}
+.data-slider h1 {
+    -webkit-box-orient: vertical;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    overflow: hidden;
+}
