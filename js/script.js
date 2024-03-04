@@ -126,8 +126,21 @@ async function getPopularAnimes(data) {
             subOrDub = "SUB";
         }
 
-        POPULAR_HTML += `<a href="${url}"><div class="poster la-anime"> <div id="shadow1" class="shadow"><div class="dubb"># ${pos + 1
-            }</div> <div class="dubb dubb2">${subOrDub}</div> </div><div id="shadow2" class="shadow"> <img class="lzy_img" src="./static/loading1.gif" data-src="${image}"> </div><div class="la-details"> <h3>${title}</h3></div></div></a>`;
+        POPULAR_HTML += `
+        <a href="${url}">
+            <div class="poster la-anime"> 
+                <div id="shadow1" class="shadow">
+                    <div class="dubb"># ${pos + 1}</div> 
+                    <div class="dubb dubb2">${subOrDub}</div> 
+                </div>
+                <div id="shadow2" class="shadow"> 
+                    <img class="lzy_img" src="./static/loading1.gif" data-src="${image}"> 
+                </div>
+                <div class="la-details"> 
+                    <h3>${title}</h3>
+                </div>
+            </div>
+        </a>`;
     }
 
     document.querySelector(".popularg").innerHTML = POPULAR_HTML;
