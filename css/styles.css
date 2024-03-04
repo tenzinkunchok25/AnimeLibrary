@@ -3,6 +3,33 @@
     padding: 0;
     box-sizing: border-box;
 }
+body{
+    background-color: #111;
+    overflow-x: hidden;
+}
+i {
+    margin: auto;
+    margin-right: 10px;
+}
+a {
+    text-decoration: none;
+}
+::-webkit-scrollbar {
+    width: 5px;
+}
+
+::-webkit-scrollbar-track {
+    background: #f1f1f100;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #888;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}
+
 /*****************************************************/
 /*Navigation Bar*/
 
@@ -254,6 +281,21 @@ h1 {
 
 /**************************************************************/
 /* The Top 10 Category*/
+
+section {
+    position: relative;
+    width: 100%;
+    margin: 0px;
+    height: fit-content;
+}
+section img {
+    box-sizing: border-box;
+    height: fit-content;
+    max-width: 200px;
+    border: 5px solid white;
+    border-radius: 5px;
+    margin: auto;
+}
 .divox {
     padding: 0px;
 }
@@ -284,6 +326,7 @@ h1 {
     margin: 0px;
     overflow: visible;
     margin-top: 20px;
+    max-width: 220px;
 }
 .la-anime {
     display: inline-block;
@@ -392,7 +435,6 @@ h1 {
     font-size: 12px;
 }
 /****************************************************/
-
 @media only screen and (min-width: 600px) {
     h1 {
         font-size: 28px;
@@ -407,26 +449,6 @@ h1 {
     #watchh {
         margin: 50px 0px;
     }
-
-    section img {
-        box-sizing: border-box;
-        height: fit-content;
-        max-width: 300px;
-        width: 100%;
-        border: 5px solid white;
-        border-radius: 5px;
-        margin: auto;
-    }
-
-    .poster {
-        box-sizing: border-box;
-        text-align: center;
-        display: inline;
-        margin: 0px;
-        overflow: visible;
-        margin-top: 20px;
-        width: 250px;
-    }
 }
 
 @media only screen and (min-width: 1200px) {
@@ -438,39 +460,6 @@ h1 {
 
     #watchh {
         margin: 50px 0px;
-    }
-
-    .poster {
-        box-sizing: border-box;
-        text-align: center;
-        display: inline;
-        margin: 0px;
-        overflow: visible;
-        margin-top: 20px;
-        width: 300px;
-    }
-
-    section img {
-        height: 100%;
-        width: 100%;
-    }
-}
-@media only screen and (min-width: 420px) {
-    .shadow {
-        height: 240px;
-    }
-}
-
-@media only screen and (min-width: 580px) {
-
-    .la-anime {
-        max-width: 220px;
-    }
-}
-
-@media only screen and (min-width: 1200px) {
-    .la-anime {
-        max-width: 220px;
     }
 }
 @media only screen and (max-width: 480px) {
