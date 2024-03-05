@@ -41,7 +41,7 @@ a {
     flex-direction: row;
     justify-content: space-between;
     padding: 15px 20px;
-    z-index: 4;
+    z-index: 5;
     transition-timing-function: ease-in;
     transition: all 1s;
 }
@@ -318,6 +318,7 @@ section img {
     width: 100%;
     height: fit-content;
 }
+
 .poster {
     box-sizing: border-box;
     text-align: center;
@@ -327,6 +328,11 @@ section img {
     overflow: visible;
     margin-top: 20px;
     max-width: 220px;
+    transition: transform 450ms;
+}
+.poster:hover{
+    transform: scale(1.06);
+    z-index: 4;
 }
 .la-anime {
     display: inline-block;
