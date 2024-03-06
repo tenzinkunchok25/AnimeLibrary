@@ -3,9 +3,15 @@
     padding: 0;
     box-sizing: border-box;
 }
-body{
+body,html{
     background-color: #111;
     overflow-x: hidden;
+    height: 100%;
+    width: 100%;
+    padding: 0px;
+    margin: 0px;
+    display: block;
+    height: fit-content;
 }
 i {
     margin: auto;
@@ -13,6 +19,14 @@ i {
 }
 a {
     text-decoration: none;
+}
+h2 {
+    font-family: "Montserrat", sans-serif;
+    color: #ed3832;
+    font-weight: 500;
+    width: 100%;
+    font-size: 20px;
+    margin: 10px;
 }
 ::-webkit-scrollbar {
     width: 5px;
@@ -280,46 +294,48 @@ h1 {
 }
 
 /**************************************************************/
-/* The Top 10 Category*/
-
+/* The Top 10 Category*/ 
 section {
     position: relative;
     width: 100%;
     margin: 0px;
     height: fit-content;
-}
-section img {
+ }
+ section img {
     box-sizing: border-box;
     height: fit-content;
     max-width: 200px;
     border: 5px solid white;
     border-radius: 5px;
     margin: auto;
-}
-.divox {
+ }
+ .divox {
     padding: 0px;
-}
-#latest {
+ }
+ #latest {
     margin-left: 20px;
     margin-top: 20px;
     margin-bottom: 15px;
-}
-
-#latest2 a {
+ }
+ 
+ 
+ #latest2 a {
     color: white;
     text-decoration: none;
-}
-
-#latest2 {
+ }
+ 
+ 
+ #latest2 {
     padding: 0px;
     box-sizing: border-box;
     display: inline-block;
     text-align: center;
     width: 100%;
     height: fit-content;
-}
-
-.poster {
+ }
+ 
+ 
+ .poster {
     box-sizing: border-box;
     text-align: center;
     display: inline;
@@ -329,12 +345,12 @@ section img {
     margin-top: 20px;
     max-width: 220px;
     transition: transform 450ms;
-}
-.poster:hover{
+ }
+ .poster:hover{
     transform: scale(1.06);
     z-index: 4;
-}
-.la-anime {
+ }
+ .la-anime {
     display: inline-block;
     padding: 0px;
     margin: 0px 3px;
@@ -342,32 +358,35 @@ section img {
     position: relative;
     width: calc(50% - 20px);
     max-width: 200px;
-}
-.shadow {
+ }
+ .shadow {
     box-shadow: inset 0px -100px 50px -50px rgba(32, 33, 37, 1);
     position: relative;
     height: 200px;
     z-index: 1;
-}
-
-#shadow1 {
+ }
+ 
+ 
+ #shadow1 {
     box-shadow: inset 0px -100px 50px -50px rgba(32, 33, 37, 1);
     position: absolute;
     top: 0px;
     left: 0px;
     right: 0px;
     z-index: 3;
-}
-
-#shadow2 {
+ }
+ 
+ 
+ #shadow2 {
     position: relative;
     top: 0px;
     left: 0px;
     right: 0px;
     z-index: 1;
-}
-
-.shadow img {
+ }
+ 
+ 
+ .shadow img {
     border: none;
     border-radius: 0px;
     height: 100%;
@@ -383,8 +402,8 @@ section img {
     right: 0px;
     max-width: unset;
     z-index: 1;
-}
-.dubb {
+ }
+ .dubb {
     color: white;
     background-color: red;
     position: absolute;
@@ -398,22 +417,23 @@ section img {
     font-size: 12px;
     padding: 2px 4px;
     z-index: 5;
-}
-.dubb2 {
+ }
+ .dubb2 {
     left: unset;
     right: 10px;
     background-color: white;
     color: black;
-}
-.la-details {
+ }
+ .la-details {
     background-color: rgb(32, 33, 37);
     width: 100%;
     box-sizing: border-box;
     padding: 10px;
     overflow: hidden;
-}
-
-.la-details h3 {
+ }
+ 
+ 
+ .la-details h3 {
     margin: 0px;
     font-family: "Montserrat", sans-serif;
     font-size: 14px;
@@ -434,12 +454,15 @@ section img {
     -webkit-line-clamp: 2;
     -webkit-box-orient: vertical;
     overflow: hidden;
-}
-.la-details span {
+ }
+ .la-details span {
     color: rgba(255, 255, 255, 0.3);
     font-family: "Montserrat", sans-serif;
     font-size: 12px;
-}
+ }
+ 
+ 
+ 
 /****************************************************/
 @media only screen and (min-width: 600px) {
     h1 {
