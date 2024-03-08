@@ -33,14 +33,18 @@
         <form action="./search.html" method="GET">
           <input
             type="text"
-            name="query"
             id="query"
+            name="query"
             placeholder="Search Anime..."
-            required
+            class="hidden"
           />
-          <button name="search" type="submit">
-            <i class="fa fa-search"></i>
-          </button>
+          <img
+            src="images/searchbar.png"
+            alt="Search Icon"
+            id="search-icon"
+            width="25"
+            height="25"
+          />
         </form>
       </div>
     </header>
@@ -109,6 +113,23 @@
           nav.classList.add("nav_black");
         } else {
           nav.classList.remove("nav_black");
+        }
+      });
+    </script>
+    <script>
+      const searchIcon = document.getElementById("search-icon");
+      const searchInput = document.getElementById("query");
+
+      searchIcon.addEventListener("click", function () {
+        searchIcon.style.display = "none";
+        searchInput.style.display = "inline-block";
+        searchInput.focus();
+      });
+
+      searchInput.addEventListener("blur", function () {
+        if (searchInput.value === "") {
+          searchInput.style.display = "none";
+          searchIcon.style.display = "inline-block";
         }
       });
     </script>

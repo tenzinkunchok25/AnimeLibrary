@@ -54,7 +54,7 @@ h2 {
     display:flex;
     flex-direction: row;
     justify-content: space-between;
-    padding: 15px 20px;
+    align-content: center;
     z-index: 5;
     transition-timing-function: ease-in;
     transition: all 1s;
@@ -62,6 +62,38 @@ h2 {
 .nav_black{
     background-color:#111;
 }
+#title1{
+    padding: 10px 20px;
+}
+#search-div{
+    padding: 0px 20px;
+    align-self: center;
+}
+#search-icon:hover{
+    transition: transform 600ms;
+    transform: scale(1.2);
+    z-index: 4;
+ }
+input[type="text"] {
+    align-self: center;
+    margin: 0px;
+    padding: 10px;
+    font-size: 16px;
+    background-color: #111 ;
+    color: white;
+    border: 1px solid white;
+    display: none;
+    font-family: "Montserrat", sans-serif;
+    width: calc(100% - 0px);
+  }
+  input[type="text"]:focus {
+    outline: none;
+  }
+  
+  .hidden {
+    display: none;
+  }
+
 
 /*****************************************************/
 /* Banner of the page*/
