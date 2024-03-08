@@ -492,7 +492,23 @@ section {
     font-family: "Montserrat", sans-serif;
     font-size: 12px;
  }
- 
+ /*Footer*/
+ /****************************************************/
+footer{
+    margin: 20px 20px 10px 20px;
+}
+ .socialmedia{
+    display: flex;
+}
+.socialmedia_logo{
+    object-fit: contain;
+    margin-right:20px;
+}
+.copy{
+    margin-top: 10px;
+    font-size: 15px;
+    color: rgb(177, 172, 172);
+}
  
  
 /****************************************************/
