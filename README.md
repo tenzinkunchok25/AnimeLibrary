@@ -6,7 +6,7 @@
 </div>
 <div>
   <h1>Anime Library</h1>
-<p>Anime Library is a web application that allows users ad-free. The application provides users with access to a wide range of anime episodes and information about the top airing anime powered by Gogoanime and AniList</p>
+<p>Anime Library is a web application that allows users to watch ad-free anime. The application provides users with access to a wide range of anime episodes and information about the top airing anime powered by Gogoanime and AniList</p>
 </div>
 
 <div>
