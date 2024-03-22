@@ -16,5 +16,65 @@
     />
     <link rel="stylesheet" href="./css/anime.css" />
   </head>
-  <body></body>
+  <body>
+    <!--Navigation-->
+    <header id="head-div">
+      <div id="title1">
+        <a href="./index.html"
+          ><img
+            src="images/netflix_logo.png"
+            alt="AnimeLibrary"
+            width="80"
+            height="25"
+        /></a>
+      </div>
+      <div id="search-div">
+        <form action="./search.html" method="GET">
+          <input
+            type="text"
+            id="query"
+            name="query"
+            placeholder="Search Anime..."
+            class="hidden"
+          />
+          <img
+            src="images/searchbar.png"
+            alt="Search Icon"
+            id="search-icon"
+            width="25"
+            height="25"
+          />
+        </form>
+      </div>
+    </header>
+
+    <!--Scripts-->
+    <script>
+      const nav = document.getElementById("head-div");
+      window.addEventListener("scroll", () => {
+        if (window.scrollY >= 100) {
+          nav.classList.add("nav_black");
+        } else {
+          nav.classList.remove("nav_black");
+        }
+      });
+    </script>
+    <script>
+      const searchIcon = document.getElementById("search-icon");
+      const searchInput = document.getElementById("query");
+
+      searchIcon.addEventListener("click", function () {
+        searchIcon.style.display = "none";
+        searchInput.style.display = "inline-block";
+        searchInput.focus();
+      });
+
+      searchInput.addEventListener("blur", function () {
+        if (searchInput.value === "") {
+          searchInput.style.display = "none";
+          searchIcon.style.display = "inline-block";
+        }
+      });
+    </script>
+  </body>
 </html>
